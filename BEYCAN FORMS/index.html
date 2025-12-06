@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beycan Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="D:\html\BEYCAN FORMS\images.png\icon.png">
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e9ff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid rgb(24, 24, 64);
+            border-radius: 10px;
+            background-color: #ebbbf6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: underline;
+            text-decoration-color: rgb(24, 24, 64);
+            color: rgb(24, 24, 64);
+        }
+
+        h3, p {
+            text-align: center;
+            margin-top: -10px;
+            color: rgb(24, 24, 64);
+        }
+
+        .form label {
+            display: inline-block;
+            width: 180px;
+            font-weight: bold;
+            color: rgb(24, 24, 64);
+        }
+
+        .form input,
+        .form textarea {
+            width: 60%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(24, 24, 64);
+            color: white;
+            padding: 10px;
+            width:fit-content;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 180px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(185, 185, 201);
+            color: black;
+        }
+        .terms-box h2 {
+            text-decoration: underline;
+            text-decoration-color: rgb(24, 24, 64);
+            color: rgb(24, 24, 64);
+            margin-bottom: 10px;
+        }
+
+        .terms-box label {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 15px;
+            color: rgb(24, 24, 64);
+           width: auto;
+        }
+
+        .terms-box input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-top: 3px;
+            cursor: pointer;
+        }
+
+        .terms-box .term-item {
+            margin-bottom: 15px;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+
+    <h1>BEYCAN</h1>
+    <h3>Believe You Can</h3>
+    <h3>Technical Training Institute</h3>
+    <p>Robotics / Programming / Web Design / CADD / Gaming / Projects / Career Development</p>
+
+    <div class="container">
+
+        <h1>Registration Form</h1>
+        <hr>
+
+        <form>
+            <div class="form">
+                <label>Course Applied For:</label>
+                <input type="text" name="course" placeholder="Enter Course Name" required>
+            </div>
+
+            <div class="form">
+                <label>Date of Joining:</label>
+                <input type="date" name="Date" required>
+            </div>
+
+            <div class="form">
+                <label>Registration Number:</label>
+                <input type="text" name="regno" placeholder="Enter Registration Number" required>
+            </div>
+            <h1>Personal Information</h1>
+
+            <div class="form">
+                <label>Name:</label>
+                <input type="text" name="name" placeholder="Enter Full Name" required>
+            </div>
+
+            <div class="form">
+                <label>Date of Birth:</label>
+                <input type="date" name="dob" required>
+            </div>
+
+            <div class="form">
+                <label>Father's Name:</label>
+                <input type="text" name="fname" placeholder="Enter Father's Name" required>
+            </div>
+
+            <div class="form">
+                <label>Father's Occupation:</label>
+                <input type="text" name="foccupation" placeholder="Enter Father's Occupation" required>
+            </div>
+
+            <div class="form">
+                <label>Mother's Name:</label>
+                <input type="text" name="mname" placeholder="Enter Mother's Name" required>
+            </div>
+
+            <div class="form">
+                <label>Mother's Occupation:</label>
+                <input type="text" name="moccupation" placeholder="Enter Mother's Occupation" required>
+            </div>
+
+            <div class="form">
+                <label>Address:</label>
+                <textarea name="address" rows="4" placeholder="Enter Address" required></textarea>
+            </div>
+
+            <div class="form">
+                <label>Contact Number:</label>
+                <input type="tel" name="contact" placeholder="Enter Contact Number" required>
+            </div>
+
+            <div class="form">
+                <label>Alternative Number:</label>
+                <input type="tel" name="altcontact" placeholder="Enter Alternative Number">
+            </div>
+
+            <div class="form">
+                <label>Educational Qualification:</label>
+                <input type="text" name="education" placeholder="Enter Qualification" required>
+            </div>
+
+            <div class="form">
+                <label>School/College Name:</label>
+                <input type="text" name="school" placeholder="Enter School/College Name" required>
+            </div>
+
+            <div class="form">
+                <label>Employment Details:</label>
+                <input type="text" name="Edetails" placeholder="Enter Employment Details">
+            </div>
+
+            <div class="form">
+                <label>Email ID:</label>
+                <input type="email" name="email" placeholder="Enter Email ID" required>
+            </div>
+            <div class="form terms-box">
+                <h2>TERMS & CONDITIONS</h2>
+
+                <div class="term-item">
+                    <label>
+                        <input type="checkbox" name="term1" required>
+                        The usage of mobile phones is strictly prohibited inside the institutional premises.
+                    </label>
+                </div>
+
+                <div class="term-item">
+                    <label>
+                        <input type="checkbox" name="term2" required>
+                        Students must be punctual and arrive at the centre on time.
+                    </label>
+                </div>
+
+                <div class="term-item">
+                    <label>
+                        <input type="checkbox" name="term3" required>
+                        Students should maintain cleanliness inside the institution.
+                    </label>
+                </div>
+
+                <div class="term-item">
+                    <label>
+                        <input type="checkbox" name="term4" required>
+                        Fees once paid will not be refunded.
+                    </label>
+                </div>
+
+                <div class="term-item">
+                    <label>
+                        <input type="checkbox" name="term5" required>
+                        Students should not take leave without prior intimation.
+                    </label>
+                </div>
+
+                <div class="term-item">
+                    <label>
+                        <input type="checkbox" name="term6" required>
+                        Long absence without intimation may lead to cancellation of the course.
+                    </label>
+                </div>
+            </div>
+            <div class="form">
+                <h2 style="text-decoration: underline;">DECLARATION</h2>
+                <p>I hereby declare that I accept all the above terms and conditions.</p>
+            </div>
+
+            <div class="form">
+                <label>Place:</label>
+                <input type="text" name="place" placeholder="Enter Your Location" required>
+            </div>
+
+            <div class="form">
+                <label>Date:</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="form">
+                <label>Signature:</label>
+                <input type="text" name="signature" placeholder="Enter Your Full Name" required>
+            </div>
+
+            <div class="form">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
